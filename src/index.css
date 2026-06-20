@@ -2,5 +2,13 @@
 html, body, #root {
   height: 100%;
   margin: 0;
-  overflow: hidden;
+  
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
