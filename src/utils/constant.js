@@ -6,8 +6,8 @@ export const API_OPTIONS = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZmFhODQ1NTk5ZDJmN2IyZDc1MWI5MjAyNmZjMThmYyIsIm5iZiI6MTc4MTkyODgzMC4yMzQsInN1YiI6IjZhMzYxMzdlM2I5ZTJhY2YyMDg5ODQwZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.wJfhfp_qEhik8M6lK6jN8OHus-yDZP5gJMxi8FRCUoc",
-  },
+      "Bearer " + import.meta.env.VITE_TMDB_KEY,
+        },
 };
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";

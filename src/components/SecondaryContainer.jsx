@@ -4,10 +4,10 @@ import MovieList from "./MovieList"
 
 const SecondaryContainer = () => {
   const movies=useSelector((store)=>store.movies)
-  console.log("Redux Store:", movies);
+  // console.log("Redux Store:", movies);
   return (
     <div className="bg-black">
-<div className="-mt-52 relative z-20 px-10 pb-10">
+<div className="-mt-46 relative z-20 px-10 pb-10">
       <MovieList title={"Now Playing"} movies={movies.nowPlayingMovies}/>
       <MovieList title={"Top Rated"} movies={movies.topRatedMovies}/>
       <MovieList title={"Popular"} movies={movies.popularMovies}/>

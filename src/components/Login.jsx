@@ -39,9 +39,9 @@ const Login = () => {
             displayName: name.current.value
           })
          
-          .error((error)=>{
-            setErrorMessage(error.message)
-          })
+          .catch((error) => {        
+    setErrorMessage(error.message)
+  })
         })
         .catch((error)=>{
           const errrorCode=error.code;
@@ -92,7 +92,7 @@ const Login = () => {
         </h1>
 
         <input
-           autocomplete="new-password" 
+           autoComplete="new-password" 
           ref={email}
           type="text"
           placeholder="Email or phone number"
